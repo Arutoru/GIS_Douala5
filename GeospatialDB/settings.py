@@ -161,18 +161,6 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
-
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django.core.cache.backends.db.DatabaseCache",
-#         "LOCATION": "cache_data",
-#     }
-# }
-
 LEAFLET_CONFIG = {
     # Retirer 0.022 pour les 2 premières et ajouter 0.022 pour les 2 dernières
     'SPATIAL_EXTENT': (9.700, 4.040, 9.810, 4.150), # 4 corners
