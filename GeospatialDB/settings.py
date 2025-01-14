@@ -17,7 +17,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = str(os.path.join(BASE_DIR, 'AdminDB/static'))
 # LINUX
-GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
+GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lkkc=ib/libgdal.so"))
 GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
 # WINDOWS
 # GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
@@ -160,18 +160,6 @@ STATIC_ROOT = str(os.path.join(BASE_DIR, "staticfiles"))
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
-
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django.core.cache.backends.db.DatabaseCache",
-#         "LOCATION": "cache_data",
-#     }
-# }
 
 LEAFLET_CONFIG = {
     # Retirer 0.022 pour les 2 premières et ajouter 0.022 pour les 2 dernières
