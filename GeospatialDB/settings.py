@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-fgy=_*pd$#a4eg_gy=0l-ihf*aqax+l)*!uxoc#v*d=mtblrz9
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -153,7 +153,7 @@ USE_TZ = True
 
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATICFILES_STORAGE = " django.contrib.staticfiles.storage.StaticFilesStorage"
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 STATIC_URL = '/static/'
 STATIC_ROOT = str(os.path.join(BASE_DIR, "staticfiles"))
