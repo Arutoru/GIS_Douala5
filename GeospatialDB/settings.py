@@ -17,11 +17,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / 'AdminDB' / 'static'
 # LINUX
-# GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
-# GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
+GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
+GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
 # WINDOWS
-GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
-GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
+# GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
+# GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-fgy=_*pd$#a4eg_gy=0l-ihf*aqax+l)*!uxoc#v*d=mtblrz9
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
