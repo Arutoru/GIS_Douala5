@@ -15,7 +15,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
-STATIC_DIR = BASE_DIR / 'AdminDB' / 'static'
+STATIC_DIR = str(os.path.join(BASE_DIR, 'AdminDB/static'))
 # LINUX
 GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
 GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
@@ -164,10 +164,10 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR
+# LOGIN_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = '/'
 
 CACHES = {
     "default": {
